@@ -1,0 +1,105 @@
+h1 {
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 43px;
+}
+p {
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
+}
+.form-buttons {
+    text-align: right;
+}
+input[type="text"]:focus,
+input[type="email"]:focus {
+    box-shadow: 0 0 5px #007bff;
+}
+input[type="submit"], input[type="reset"], input[type="button"] {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+    background-color: darkgreen;
+}
+input[type="reset"] {
+    background-color: blue;
+}
+input[type="reset"]:hover {
+    background-color: darkblue;
+}
+input[type="button"] {
+    background-color: red;
+}
+input[type="button"]:hover {
+    background-color: darkred;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+}
+.container {
+    display: flex;
+    height: 100vh;
+}
+.left-panel {
+    flex: 0 0 65%;
+    background-image: url('images/img1.jpeg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.right-panel {
+    flex: 0 0 35%;
+    background-image: url('images/img2.png');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right-panel form {
+    width: 80%;
+    max-width: 400px;
+    background-color:rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(180, 178, 170, 0.896);
+}
+input[type="text"],
+input[type="email"] {
+    width: 250px;
+    padding: 4px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: 'Libre Baskerville', serif;
+    color: #333333c5;
+}
+select {
+    width: 160px;
+    padding: 4px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: 'Libre Baskerville', serif;
+    color: #333333c5;
+    cursor: pointer;
+}

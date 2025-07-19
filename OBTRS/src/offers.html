@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Offers</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel" style="background-image: url('images/img1.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        </div>
+
+        <div class="right-panel" style="background-image: url('images/img2.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+            <form action="/submit_offer" method="post">
+                <h1>Special Offers</h1>
+                <p>To avail our special offers available on these days Please fill out the form below</p>
+
+                <label for="nic">NIC Number :</label><br>
+                <input type="text" id="nic" name="nic"><br>
+                
+                <label for="name">Full Name :</label><br>
+                <input type="text" id="name" name="name"><br>
+            
+                <label for="email">Email :</label><br>
+                <input type="email" id="email" name="email"><br><br>
+            
+                <label for="type">Select Ticket Type :</label><br>
+                <input type="radio" id="luxury" name="type" value="luxury">
+                <label for="luxury" style="font-size: 16px">Luxury Ticket</label><br>
+                <input type="radio" id="semi-luxury" name="type" value="semi-luxury">
+                <label for="semi-luxury" style="font-size: 16px">Semi Luxury Ticket</label><br>
+                <input type="radio" id="normal" name="type" value="normal">
+                <label for="normal" style="font-size: 16px">Normal Ticket</label><br><br>
+            
+                <label for="range">Select Price Range :</label>
+                <select id="range" name="range">
+                    <option value="Less than Rs. 500">Less than Rs. 500</option>
+                    <option value="Rs. 500 to Rs. 2000">Rs. 500 to Rs. 2000</option>
+                    <option value="Rs. 2001 to Rs. 5000">Rs. 2001 to Rs. 5000</option>
+                    <option value="More than Rs. 5000">More than Rs. 5000</option>
+                </select><br><br>
+            
+                <input type="checkbox" id="checkbox" name="checkbox">
+                <label for="checkbox" style="font-size: 16px">I have a promo code</label><br><br>
+            
+                <label for="code">Promo Code:</label><br>
+                <input type="text" id="code" name="code" disabled> 
+                <p id="validationResult"></p><br>
+    
+                <div class="form-buttons">
+                    <input type="submit" value="Apply Offer" id="Apply">
+                    <input type="reset" value="Clear">
+                    <input type="button" value="Cancel" onclick="window.location.href='your_cancel_url.html';">
+                </div>
+            </form>
+        </div>
+    </div>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
